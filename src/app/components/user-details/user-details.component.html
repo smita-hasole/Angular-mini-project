@@ -1,0 +1,50 @@
+<div class="parent"style>
+  <div class="userDetailParent">
+    <table class="tablestyle">
+      <tr>
+        <th> <img src={{userDetails.avatar_url}} alt="Mountain View" style="width:40px;height:40px;border-radius:50%;">
+       <b style="vertical-align: 70%">   {{userDetails.name}}</b></th>
+        <br>
+        <br>
+        <br>
+        <br>
+      </tr>
+      <tr>
+        <td style="width:500px">Username</td>
+        <td>{{userDetails.login}}</td>
+      </tr>
+      <br>
+      <tr>
+        <td style="width:500px">Location</td>
+        <td>{{userDetails.location}}</td>
+      </tr>
+      <br>
+      <tr>
+        <td style="width:500px">Company</td>
+        <td>{{userDetails.company}}</td>
+      </tr>
+      <br>
+      <tr>
+        <td style="width:300px">Blog Link</td>
+        <td>{{userDetails.blog}}</td>
+      </tr>
+      <br>
+    </table>
+    <br><br>
+    <div style="position:relative; margin-left:100px">
+    <div class="blockStyle" style="background-color:blue;"><p style="margin-top:8px">{{userDetails.public_repos}} Public Repoa</p>
+    </div>
+    <div class="blockStyle" style="background-color:green;"><p style="margin-top:8px" > {{userDetails.followers}} Followers</p>
+    </div>
+    <div class="blockStyle" style=" background-color:darkslategrey;"><p style="margin-top:8px" >{{userDetails.following}} following</p>
+    </div>
+</div>
+<br>
+<br>
+<br>
+    <div style="align-content:center">
+      <input type="button" class="buttonStyle" (click)="show()" value="repos">
+    </div>
+  </div>
+
+</div>

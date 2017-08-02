@@ -1,0 +1,8 @@
+<h2 style="text-align:center;margin:0px;padding:10px">
+  <b>GitHub Users</b>
+</h2>
+<p>
+  <div class="list_item" *ngFor="let user of users">
+    <img src={{user.avatar_url}} alt="Mountain View" style="width:40px;height:40px;border-radius:50%"> &nbsp;
+    <a class="textstyle" [routerLink]="['/User', user.login]"> {{user.login}} </a>
+  </div>

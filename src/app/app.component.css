@@ -1,0 +1,19 @@
+
+.footer {  width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: black;
+    position:fix;
+    clear: both;
+    padding:15px;
+    color:white;
+    text-align: center;
+}
+.header{
+    width: 100%;
+    margin: 0px;
+    bottom: 0px;
+    padding: 0px;
+}
+
+

@@ -1,0 +1,55 @@
+<div class="header"
+>
+    <!DOCTYPE html>
+    <html>
+
+    <head style="margin:0">
+
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: #111;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <ul>
+            <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+            <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        </ul>
+
+    </body>
+
+    </html>
+</div>
+
+<div id="content" class ="parent">
+<router-outlet></router-outlet>
+</div>
+
+<div id="footer">
+    <div class="footer">
+        Copyright @ Clairvoyant 2016. All Rights Reserved.
+    </div>
+</div>
