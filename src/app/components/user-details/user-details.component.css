@@ -1,31 +1,48 @@
-.userDetailParent{ 
-width:80%;
-height: 40%;
-padding: 20px;
-margin: 10%;
-margin-top: 0px;
+.container{
+    align-content: center;
+    padding: 0px;
+}
+
+.jumbotron{ 
+width:98%;
+height: auto;
+margin-top:80px; 
 background-color: white; 
-align-content: center;
- text-align: center;
- vertical-align: 50%;
+ padding: 0px;
+ font-size: 18px;
+ font-style: inherit;
 }
 .buttonStyle{
     padding:10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     color:white;
     background-color:darkcyan ;
     text-align: center;
+   margin-bottom: 20px;
+   border-radius: 10%;
+   border: 0 none none;
+   font-size: 14px;
 }
 .tablestyle{
-    padding: 20px;
+margin-left: 50px;
    align-content: center;
 }
 .blockStyle{
     float:left;
-     width: 300px; 
+     width: 320px; 
      height:30px;
      color: white; 
-   
 }
 
+.blockTextStyle{
+    font-size: 14px;
+    margin-top:7px;
+    text-align: center;
+}
+
+.userImageStyle{
+   width:40px;
+   height:40px;
+   border-radius:50%;
+}

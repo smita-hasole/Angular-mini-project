@@ -10,14 +10,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
 import { ReposComponent } from './components/repos/repos.component';  
 import { UsersService } from "app/users.service";
+import { routes } from "app/routes";
 
-const appRoutes: Routes = [
-   { path: 'home', component:UsersViewComponent }, 
-   { path: 'about', component: AboutUsComponent }, 
-   { path: '', component: UsersViewComponent } ,
-   {path:'User/:name',component:UserDetailsComponent},
-   {path:':name/repos', component:ReposComponent}
-];  
+
 
 @NgModule({
   declarations: [
@@ -31,7 +26,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(routes)
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]

@@ -7,32 +7,9 @@ import { ReposComponent } from "app/components/repos/repos.component";
 
 
 export const routes: Routes = [
-    {
-        path: '',
-        component: AppComponent,
-        children: [
-            {
-                path: '',
-                component: UsersViewComponent
-            },
-            {
-                path: 'home',
-                component: UsersViewComponent,
-
-            },
-            {
-                path: 'about us',
-                component: AboutUsComponent
-            },
-            {
-                path: ':name',
-                component: UserDetailsComponent
-            },
-            {
-                path: ':name/repos',
-                component: ReposComponent
-            }
-
-        ]
-    }
-]
+   { path: 'home', component:UsersViewComponent }, 
+   { path: 'about', component: AboutUsComponent }, 
+   { path: '', component: UsersViewComponent } ,
+   {path:'User/:name',component:UserDetailsComponent},
+   {path:':name/repos', component:ReposComponent}
+]; 
