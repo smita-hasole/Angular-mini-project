@@ -10,7 +10,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
 import { ReposComponent } from './components/repos/repos.component';  
 import { UsersService } from "app/users.service";
-import { routes } from "app/routes";
+import { AppRoutingModule } from "app/app.routingModule";
+
 
 
 
@@ -26,7 +27,7 @@ import { routes } from "app/routes";
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(routes)
+ AppRoutingModule
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]
