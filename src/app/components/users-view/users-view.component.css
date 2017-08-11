@@ -1,6 +1,4 @@
 .list_item{
-margin-left: 100px;
-margin-right: 100px;
 margin-bottom: 30px;
   padding: 10px;
   background-color: white;
@@ -9,10 +7,26 @@ margin-bottom: 30px;
   border-radius: 5px;
   color :black;
  padding-left: 15px;
+ 
 }
 .textstyle{
-  text-align: center;
-font-size: 20px;
+  
+font-size: 16px;
 text-decoration: none;
-vertical-align:50%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 color:black}
+
+.imageStyle{width:40px; 
+  height:40px;
+  border-radius:50%}
+
+  .headingStyle{
+    text-align:center; 
+      padding:10px;
+      margin-top:60px;
+  }
+
+  .ng-cloak {
+  display: none !important;
+}
+

@@ -1,8 +1,18 @@
-<div class="parent">
-  <h2 style=text-align:center><b>{{userId}}</b></h2>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<div class="container" >
+  <h2 class="repoTitle"><b>{{repoTitle}}</b></h2>
+    <!-- <p *ngSwitchCase="loading"><loaders-css [loader]="'square-spin'" [loaderClass]="'my-loader'"></loaders-css></p> -->
+<div class="spinnerStyle" *ngIf="isDataLoaded" class="loader"></div>
 
   <div class="list_item" *ngFor="let user of repoDetails">
-    <p style="color:black;padding:0px;margin:0px"> {{user.name}}</p>
-      <p style="color:darkslategray;padding:0px;margin:0px">{{user.description}}</p>
+    <p class="repoDetailStyle"> {{user.name}}</p>
+      <p class="repoDescStyle">{{user.description}}</p>
    </div>
 </div>

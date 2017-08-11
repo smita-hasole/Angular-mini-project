@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UsersService } from "app/users.service";
+import { UsersService } from "app/services/users.service";
 import { User } from "app/components/users-view/user";
 import { Params } from "@angular/router";
 
@@ -12,14 +12,16 @@ import { Params } from "@angular/router";
 )
 export class UsersViewComponent implements OnInit {
 
+  isDataLoaded = true;
   users: User[];
   constructor(private usersService: UsersService) {
   }
 
   ngOnInit() {
-    this.usersService.getUsers().subscribe((data)=>{this.users=data;
-    console.log(data)});
-    console.log("$$$$$$$$$$$$$$$$$$$$$ "+this.users);
+    this.isDataLoaded = true;
+    this.usersService.getUsers().subscribe((data) => {
+    this.users = data; this.isDataLoaded = false;
+      console.log(data)
+    });
   }
-
 }

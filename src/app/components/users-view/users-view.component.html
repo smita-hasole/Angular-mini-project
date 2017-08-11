@@ -1,8 +1,20 @@
-<h2 style="text-align:center;margin:0px;padding:10px">
-  <b>GitHub Users</b>
-</h2>
-<p>
-  <div class="list_item" *ngFor="let user of users">
-    <img src={{user.avatar_url}} alt="Mountain View" style="width:40px;height:40px;border-radius:50%"> &nbsp;
-    <a class="textstyle" [routerLink]="['/User', user.login]"> {{user.login}} </a>
-  </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<div class="container">
+
+  <h2 class="headingStyle">
+    <b>GitHub Users</b>
+    
+  </h2>
+  <p>
+      <div class="spinnerStyle" *ngIf="isDataLoaded" class="loader"></div>
+      
+    <div *ngFor="let user of users">
+      <a class="textstyle" [routerLink]="['/User', user.login]"> <div class="list_item"> <img src={{user.avatar_url}} alt="Mountain View" class="imageStyle"> &nbsp;{{user.login}}</div> </a>
+    </div>
+</div>
